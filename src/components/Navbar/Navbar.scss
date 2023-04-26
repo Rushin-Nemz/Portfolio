@@ -1,0 +1,29 @@
+.navbar{
+    background: #21325e;
+    width: 100%;
+    padding: 30px 0;
+}
+.collapse{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    .navbar-nav{
+        display: flex;
+        gap:20px;
+    }
+    .nav-item{
+        font-size: 20px;
+        font-weight: 700;
+
+        .nav-link{
+            color:white !important;
+            outline: 0 !important;
+
+            &:hover{
+                color: rgb(167, 162, 162) !important;
+            }
+        }
+    }
+}
