@@ -6,6 +6,7 @@ import Business from "../../assets/business.png"
 import Practise from "../../assets/practise.png"
 import News from "../../assets/news.png"
 import Notes from "../../assets/notes.png"
+import Cosmetic from "../../assets/cosmetic.png"
 // import {ProjectList} from '../../components/helpers/ProjectList'
 
 import "./Projects.scss"
@@ -29,6 +30,9 @@ const Projects = () => {
     const handleClickNotes = () => {
         window.location.replace("https://rushin-nemz.github.io/iNotebook/");
     }
+    const handleClickCosmetic = () => {
+        window.location.replace("https://rushin-nemz.github.io/cosmetic/");
+    }
     return (
         <div className='projects'>
             <div data-aos="flip-left"
@@ -51,6 +55,9 @@ const Projects = () => {
                 </div>
                 <div onClick={handleClickNews}>
                     <ProjectItem name="News Application [ReactJS]" image={News} />
+                </div>
+                <div onClick={handleClickCosmetic}>
+                    <ProjectItem name="Cosmetic Webpage" image={Cosmetic} />
                 </div>
                 <div onClick={handleClickNotes}>
                     <ProjectItem name="Application to store Notes (Backend Included)" image={Notes} />
